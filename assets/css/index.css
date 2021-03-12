@@ -1,0 +1,175 @@
+@charset "utf-8";
+html::-webkit-scrollbar {
+  display: none;
+}
+html{
+  scroll-behavior:smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e6e6e6!important;
+  font-family: "Berlin Sans FB"!important;
+  font-weight: normal!important;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+nav {
+  position: fixed;
+  left: 0;
+  top: 8vh;
+  background-color: white;
+  width: 5vw;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: 1s;
+}
+aside {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 8vh;
+  background-color: white;
+  width: 5vw;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: 1s;
+}
+aside img {
+  padding: 10px;
+}
+.top-nav {
+  background-color: white;
+  width: 100vw;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1001;
+  transition: 1s;
+}
+#top-nav span {
+  padding: 10px;
+}
+.text-menu-burger {
+  font-size: 2.3em;
+  writing-mode: vertical-lr;
+}
+/* Contenu */
+#debut-contenu {
+  width: 85vw;
+  margin-top: 8vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+#accueil {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contenu-page {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.projet_container {
+  width: 25%;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projet_container span {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+.competences_container {
+  width: 30%;
+  height: 450px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.competences_container hr {
+  width: 100px;
+  height: 4px;
+  background-color: black;
+}
+.competences_container img {
+  margin-top: 10px;
+}
+.competences_container span {
+  padding: 10px;
+}
+.asideMenu{
+  transition: 1s;
+  width: 10vw;
+}
+.topnavMenu{
+  height: 14vh;
+  transition: 1s;
+}
+.navMenu{
+  width: 40vw;
+  transition: 1s;
+}
+#menuBurger{
+  cursor: pointer;
+}
+#menu{
+  transition: 2s;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 6vw;
+  font-size: 2em;
+}
+.showMenuaffichable{
+  transition: 1s;
+  display: inherit!important;
+}
+#menu span{
+  padding: 10px;
+  width: auto;
+}
+#menu a{
+  color: black;
+  text-decoration: none;
+}
+.input-style{
+  background-color: white;
+  border-color: black;
+}
+#img-pi{
+  transition: 1s;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  z-index: 10;
+}
+#les-pi{
+  z-index: 9;
+}
+#img-montauban{
+  transition: 1s;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  z-index: 10;
+}
