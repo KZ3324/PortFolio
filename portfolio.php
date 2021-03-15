@@ -10,6 +10,7 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 if ($_POST) {
   $result = "INSERT INTO contact(nom, email, message) VALUES ('$_POST[nom]', '$_POST[email]', '$_POST[message]')";
   $pdo->exec($result);
+  header("location:portfolio.php");
 }
 ?>
 
